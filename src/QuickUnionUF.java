@@ -1,10 +1,13 @@
 
 public class QuickUnionUF {
 
+	public static void main(String [] args){
+	}
+	
 	private int[] id;
 	
 	//N is the number of objects
-	public quickUnionUF(int N){
+	public QuickUnionUF(int N){
 	id = new int[N];
 	//Set ID of each object to itself
 	for (int i = 0; i < N; i++)
@@ -20,7 +23,7 @@ public class QuickUnionUF {
 	
 	
 	//checks if p and q have the same root
-	public boolean connected(int i, int q){
+	public boolean connected(int p, int q){
 		return root(p) == root(q);
 	}
 	
@@ -30,4 +33,7 @@ public class QuickUnionUF {
 	int j = root(q);
 	id[i] = j;
 }
+	
 }
+
+
